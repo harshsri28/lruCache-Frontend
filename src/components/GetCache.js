@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "../axios"; // Use the axios instance
+import axios from "../axios";
 
 const GetCache = ({ onCacheUpdate }) => {
   const [key, setKey] = useState("");

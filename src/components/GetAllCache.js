@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import axios from "../axios"; // Use the axios instance
+import axios from "../axios";
+import config from "../config/development.json";
 
 const GetAllCache = ({ refreshTrigger }) => {
   const [items, setItems] = useState({});
@@ -8,7 +9,7 @@ const GetAllCache = ({ refreshTrigger }) => {
   const fetchAllCache = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("/cache");
+      const response = await axios.get(config.GET_ALL_URI);
       setItems(response.data.items);
     } catch (err) {
       console.error("Error fetching all cache items:", err);

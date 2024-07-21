@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import axios from "../axios"; // Use the axios instance
+import axios from "../axios";
+import config from "../config/development.json";
 
 const SetCache = ({ onCacheUpdate }) => {
   const [key, setKey] = useState("");
@@ -8,7 +9,7 @@ const SetCache = ({ onCacheUpdate }) => {
 
   const handleSetCache = async () => {
     try {
-      await axios.post("/cache", {
+      await axios.post(config.CREATE_URI, {
         key,
         value,
         duration: parseInt(duration, 10),
