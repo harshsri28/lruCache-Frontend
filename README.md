@@ -3,9 +3,11 @@
 This Project facilates LRU(Least Recently Used) functionality and has following UI -
 
 <div style="text-align: center;">
-  <img src="images/ui1.png" alt="UI 1" width="700" height="300">
+  <img src="images/process1.png" alt="UI 1" width="700" height="300">
   <br><br>
-  <img src="images/ui2.png" alt="UI 2" width="700" height="300">
+  <img src="images/process2.png" alt="UI 2" width="700" height="300">
+  <br><br>
+  <img src="images/process3.png" alt="UI 2" width="700" height="300">
 </div>
 
 ## How to run
