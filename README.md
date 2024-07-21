@@ -29,3 +29,11 @@ npm i
 ```sh
 npm start
 ```
+
+**Features**
+
+- **Set Cache:** Add items to the cache with a specified expiration duration.
+- **Get Cache:** Retrieve items from the cache by key.
+- **Delete Cache:** Remove items from the cache by key.
+- **View All Cache Items:** Display all items currently in the cache.
+- **Real-time Updates:** Automatically updates the UI when cache items expire, using WebSockets.
