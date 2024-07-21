@@ -1,5 +1,6 @@
 {
   "BASE_URI": "http://localhost:3001",
   "GET_ALL_URI": "/cache",
-  "CREATE_URI": "/cache"
+  "CREATE_URI": "/cache",
+  "WEBSOCKET_URI": "ws://localhost:3001/ws"
 }
