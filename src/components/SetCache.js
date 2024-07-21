@@ -15,6 +15,9 @@ const SetCache = ({ onCacheUpdate }) => {
         duration: parseInt(duration, 10),
       });
       alert("Cache set successfully");
+      setKey("");
+      setValue("");
+      setDuration("");
       if (onCacheUpdate) {
         onCacheUpdate();
       }
