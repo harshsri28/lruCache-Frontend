@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import GetCache from "./components/GetCache";
+import SetCache from "./components/SetCache";
+import DeleteCache from "./components/DeleteCache";
+import GetAllCache from "./components/GetAllCache";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [refreshTrigger, setRefreshTrigger] = useState(0);
+
+  const handleCacheUpdate = () => {
+    setRefreshTrigger((prev) => prev + 1);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>LRU Cache</h1>
       </header>
+      <main>
+        <GetAllCache refreshTrigger={refreshTrigger} />
+        <SetCache onCacheUpdate={handleCacheUpdate} />
+        <GetCache onCacheUpdate={handleCacheUpdate} />
+        <DeleteCache onCacheUpdate={handleCacheUpdate} />
+      </main>
     </div>
   );
-}
+};
 
 export default App;
