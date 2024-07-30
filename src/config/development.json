@@ -1,6 +1,6 @@
 {
-  "BASE_URI": "http://localhost:3001",
+  "BASE_URI": "https://lrucache-backend.onrender.com",
   "GET_ALL_URI": "/cache",
   "CREATE_URI": "/cache",
-  "WEBSOCKET_URI": "ws://localhost:3001/ws"
+  "WEBSOCKET_URI": "https://lrucache-backend.onrender.com/ws"
 }
